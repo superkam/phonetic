@@ -56,7 +56,7 @@ int main(int argc, const char * argv[])
                 }
             }
             
-            [person setValue:phonetic forProperty:kABLastNamePhoneticProperty];
+            [person setValue:[phonetic uppercaseString] forProperty:kABLastNamePhoneticProperty];
         }
         [addressBook save];
         
